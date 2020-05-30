@@ -18,8 +18,13 @@
             text-shadow: 2px 2px #fbcbcb;
         }
 
+        .max-width-height-200px {
+            max-height: 200px;
+            max-width: 200px;
+        }
+
         .slide-in {
-            transform: translateX(-500%);
+            transform: translateX(-600%);
             animation-name: slide-in;
             animation-duration: 1.5s;
             animation-timing-function: ease-out;
@@ -27,7 +32,7 @@
         }
 
         @keyframes slide-in {
-            0% { transform: translateX(-500%); }
+            0% { transform: translateX(-600%); }
             100% { transform: translateX(0%); }
         }
 
@@ -42,6 +47,17 @@
 
         .animtion-delay-3s {
             animation-delay: 3s;
+        }
+
+        pre.present {
+            position: absolute;
+            top: 8em;
+            right: 8em;
+            cursor: pointer;
+        }
+
+        pre.present:hover {
+            color: blue;
         }
 
     </style>
@@ -62,20 +78,30 @@
                 <li class="ml-10">und ...</li>
                 <li>31.536.000 Sekunden mit deinen Liebsten. <span class=" pl-4 font-bold">Kurz gesagt: ein unvergleichbares Jahr!</span></li>
             </ul>
-            <div class="flex mt-6">
-                <div class="w-1/4 p-2 text-center">
+            <pre class="present">
+                <a href="https://bmu-verlag.de/reading-sample/?book=czoxOiI5Ijs=&prop=czoyOiIyNSI7">
+     ((\o/))
+.-----//^\\-----.
+|    /`| |`\    |
+|      | |      |
+|      | |      |
+|      | |      |
+'------===------'
+            </pre>
+            <div class="flex justify-around mt-6">
+                <div class="w-1/4 p-2 text-center max-width-height-200px">
                     Helen
                     <img class="slide-in" src="helen.jpg" alt="Helen">
                 </div>
-                <div class="w-1/4 p-2 text-center">
+                <div class="w-1/4 p-2 text-center max-width-height-200px">
                     Jolanta
                     <img class="slide-in animtion-delay-1s" src="jolanta.jpg" alt="Helen">
                 </div>
-                <div class="w-1/4 p-2 text-center">
+                <div class="w-1/4 p-2 text-center max-width-height-200px">
                     Duscho
                     <img class="slide-in animtion-delay-2s" src="duscho.jpg" alt="Helen">
                 </div>
-                <div class="w-1/4 p-2 text-center">
+                <div class="w-1/4 p-2 text-center max-width-height-200px">
                     Karel
                     <img class="slide-in animtion-delay-3s" src="karel.jpg" alt="Helen">
                 </div>
