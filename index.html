@@ -1,1 +1,87 @@
-Hello Ilker
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HAllo Ilker, alles gute zum Geburtstag</title>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .bg-gradient {
+            background-image: linear-gradient( 103.3deg,  rgba(190,11,215,1) -18.7%, rgba(246,234,11,1) 90.9% );
+            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 1));
+        }
+
+        .heading-text-shadow {
+            text-shadow: 2px 2px #fbcbcb;
+        }
+
+        .slide-in {
+            transform: translateX(-500%);
+            animation-name: slide-in;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes slide-in {
+            0% { transform: translateX(-500%); }
+            100% { transform: translateX(0%); }
+        }
+
+        .animtion-delay-1s {
+            animation-delay: 1s;
+        }
+
+
+        .animtion-delay-2s {
+            animation-delay: 2s;
+        }
+
+        .animtion-delay-3s {
+            animation-delay: 3s;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container mx-auto h-full py-10">
+        <div class="w-full h-full px-20 rounded overflow-hidden bg-gradient">
+            <h1 class="text-4xl text-center mt-8 heading-text-shadow">Alles Liebe und Gute zu Deinem Geburtstag!</h1>
+            <h2 class="text-2xl mt-8 underline">Lieber Ilker, Wir wünschen dir:</h2>
+            <ul class="list-disc mt-6 pl-8 text-xl leading-loose">
+                <li>12 Monate Glück</li>
+                <li class="ml-2">52 Wochen Zufriedenheit</li>
+                <li class="ml-4">365 Tage voller Liebe</li>
+                <li class="ml-6">8.760 Stunden ohne Stress</li>
+                <li class="ml-8">525.600 Minuten Frohsinn</li>
+                <li class="ml-10">und ...</li>
+                <li>31.536.000 Sekunden mit deinen Liebsten. <span class=" pl-4 font-bold">Kurz gesagt: ein unvergleichbares Jahr!</span></li>
+            </ul>
+            <div class="flex mt-6">
+                <div class="w-1/4 p-2 text-center">
+                    Helen
+                    <img class="slide-in" src="helen.jpg" alt="Helen">
+                </div>
+                <div class="w-1/4 p-2 text-center">
+                    Jolanta
+                    <img class="slide-in animtion-delay-1s" src="jolanta.jpg" alt="Helen">
+                </div>
+                <div class="w-1/4 p-2 text-center">
+                    Duscho
+                    <img class="slide-in animtion-delay-2s" src="duscho.jpg" alt="Helen">
+                </div>
+                <div class="w-1/4 p-2 text-center">
+                    Karel
+                    <img class="slide-in animtion-delay-3s" src="karel.jpg" alt="Helen">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html><div class="max-w-sm rounded overflow-hidden shadow-lg">
